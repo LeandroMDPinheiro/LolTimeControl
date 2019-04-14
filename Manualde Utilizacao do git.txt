@@ -1,0 +1,33 @@
+Manual de Utilização do Git e Github;
+- Baixar git Eye e Git bash;
+- Configurar SSH Key; https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+- baixar e configurar editor de texto: https://stackoverflow.com/questions/10564/how-can-i-set-up-an-editor-to-work-with-git-on-windows
+- Config Core.editor para o VIM (caso nao tenha deixa previamente configurado)
+	- git --global core.editor VIM; (algo assim);
+- Comandos Basicos:
+	- Git Init "Nome da pasta";
+	- "nome do editor" "Nome do arquivo" (para criar um arquivo de texto pelo bash);
+	- Git add "nome do arquivo" (para adicionar ao sistema do git);
+	//Git add. (adiciona todos os arquivos necessarios de uma vez, ou digita add "nome do arquivo");
+	- Git Commit (para commitar ao seu projeto) (sempre na primeira vez necessario login)
+	- Git Status (lista arquivos alterados que nao foram commitados ainda)
+	- Quando abrir o vim( Colocar o que foi realizado. Apertar ESC e digitar :WQ +enter);
+	// Ou utliza o Git Commit -m "DESCRIÇÂO DO COMMIT" utilizando somente essa linha para commitar;
+	- Git Log (Lista os commit ja realizados);
+	
+	Configurando o Git Remoto:
+		- Acessar GitHub: https://github.com/;
+		- Criar repositorio, pegar codigo que ele fornece ao criar
+			git remote add origin https://github.com/"Conta/repositorio.git";
+				//Origin é o principal Remote, dado esse nome por default para facilitar push e fecth//;
+				
+	- Git Push (enviar o commite ao repositorio remoto);
+		//na primeira vez tem q especificar a branch (especia de linha de desenvolvimento);
+	-Git Config --Global push.default simple (ao utilizar o push enviar somente a branch que estiver usando Config uma vez só);
+	
+	Criando o Arquivo README:
+		-"nome do editor" "README.MD" //obs: Usar extensao .MD (MARK DOWN) para estilizar o repositorio pro codigos;
+		-# TITULO
+		- ![./"nomeda imagem.extensao"(se a imagem tiver na paste)](legenda);
+		
+		
